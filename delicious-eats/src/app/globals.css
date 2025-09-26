@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
 @theme{
-  --color-primary: #B07B15;
-  --color-primary-light: #f0ce5a;
-  --color-primary-dark: #9e6b12;
+  --color-primary: #000;
+  --color-secondary: #B07B15;
+  --color-secondary-light: #f0ce5a;
+}
+
+body {
+  background-color: #000;
+  color: #fff; 
 }
 
 .nav_link_light:hover{

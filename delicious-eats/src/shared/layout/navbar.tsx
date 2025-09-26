@@ -31,7 +31,7 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
   return (
     <div
       className={`transition-all ${
-        navBg || menuOpen || !isHome ? "bg-[#B07B15]/90 shadow-md" : "fixed"
+        navBg || menuOpen || !isHome ? "bg-primary/90 shadow-md" : "fixed"
       } duration-200 h-[12vh] z-[10000] fixed w-full`}
     >
       <div className="flex justify-between items-center h-full w-[90%] mx-auto">

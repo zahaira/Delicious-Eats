@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ResponsiveNavbar from "@/shared/layout/responsive-navbar";
+import Footer from "@/shared/layout/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* header */}
-        {children}
-        {/* footer */}
+        <ResponsiveNavbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

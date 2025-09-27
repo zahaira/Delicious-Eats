@@ -1,7 +1,12 @@
+import About from "@/shared/sections/about/about";
 import React from "react";
 
-const About = () => {
-  return <div className="pt-[80px]">about</div>;
+const Page = () => {
+  return (
+    <div className="pt-[80px]">
+      <About />
+    </div>
+  );
 };
 
-export default About;
+export default Page;

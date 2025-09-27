@@ -7,10 +7,10 @@ const RestaurantAtmosphere = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8" data-aos="fade-up">
           <h2
-            className="font-bold text-center mb-2 uppercase text-white"
+            className="font-bold text-center mb-2 text-white"
             style={{ fontSize: "clamp(1.5rem, 5vw, 3.3rem)" }}
           >
-            restaurant atmosphere
+            Restaurant Atmosphere
           </h2>
           <p className="text-gray-100 max-w-2xl mx-auto">
             Experience a unique dining atmosphere, where delicious dishes and

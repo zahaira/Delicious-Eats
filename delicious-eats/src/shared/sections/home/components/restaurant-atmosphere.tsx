@@ -3,16 +3,16 @@ import React from "react";
 
 const RestaurantAtmosphere = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary to-gray-200 overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8" data-aos="fade-up">
           <h2
-            className="font-bold text-center mb-2 uppercase text-black"
+            className="font-bold text-center mb-2 uppercase text-white"
             style={{ fontSize: "clamp(1.5rem, 5vw, 3.3rem)" }}
           >
             restaurant atmosphere
           </h2>
-          <p className="text-gray-800 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             Experience a unique dining atmosphere, where delicious dishes and
             attentive service come together for an unforgettable experience{" "}
           </p>

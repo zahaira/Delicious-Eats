@@ -6,6 +6,7 @@ import RestaurantAtmosphere from "./components/restaurant-atmosphere";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SpecialDishes from "./components/special-dishes";
+import Reviews from "./components/reviews";
 
 const HomePage = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Hero />
       <SpecialDishes />
       <RestaurantAtmosphere />
+      <Reviews />
     </div>
   );
 };

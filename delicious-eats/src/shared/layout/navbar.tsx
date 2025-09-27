@@ -62,6 +62,15 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
               </Link>
             );
           })}
+          <a
+            href="/menu.pdf" // place your menu file inside /public/menu.pdf
+            download="Delicious-Eats-Menu.pdf"
+            className={`${
+              navBg || !isHome ? "nav_link_dark" : "nav_link_light"
+            } relative`}
+          >
+            Menu
+          </a>
         </div>
         {/* Burger menu */}
         <div className="flex items-center space-x-4 md:hidden">

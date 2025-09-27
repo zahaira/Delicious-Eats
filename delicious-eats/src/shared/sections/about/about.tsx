@@ -58,7 +58,7 @@ const About = () => {
         </div>
 
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Our Story
           </h1>
           <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up animation-delay-300">

@@ -14,6 +14,7 @@ interface props {
 
 const Navbar = ({ toggleMenu, menuOpen }: props) => {
   const [navBg, setNavBg] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handler = () => {
@@ -23,8 +24,6 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
     window.addEventListener("scroll", handler);
     return () => window.removeEventListener("scroll", handler);
   }, []);
-
-  const pathname = usePathname();
 
   return (
     <div
@@ -45,40 +44,45 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
             />
           </Link>
         </div>
+
         {/* nav_link */}
         <div className="hidden md:flex w-fit gap-10 mx-auto font-medium text-white">
           {paths.map((link) => {
+            const isActive = pathname === link.url;
             return (
               <Link
                 key={link.id}
                 href={link.url}
-                className={`${
-                  navBg ? "nav_link_dark" : "nav_link_light"
-                } relative`}
+                className={`
+                  relative transition-colors duration-300 
+                  ${navBg ? "nav_link_dark" : "nav_link_light"} 
+                  ${isActive ? "text-[#f0ce5a] " : ""}
+                `}
               >
                 {link.label}
               </Link>
             );
           })}
           <a
-            href="/menu.pdf" // place your menu file inside /public/menu.pdf
+            href="/menu.pdf"
             download="Delicious-Eats-Menu.pdf"
             className={`${navBg ? "nav_link_dark" : "nav_link_light"} relative`}
           >
             Menu
           </a>
         </div>
+
         {/* Burger menu */}
         <div className="flex items-center space-x-4 md:hidden">
           {menuOpen ? (
             <HiXMark
               onClick={toggleMenu}
-              className="w-8 h-8 cursor-pointer text-white "
+              className="w-8 h-8 cursor-pointer text-white"
             />
           ) : (
             <HiBars3BottomRight
               onClick={toggleMenu}
-              className="w-8 h-8 cursor-pointer text-white "
+              className="w-8 h-8 cursor-pointer text-white"
             />
           )}
         </div>

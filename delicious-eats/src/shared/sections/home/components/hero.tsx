@@ -11,6 +11,11 @@ const slides = [
     alt: "Delicious food 1",
   },
   {
+    id: 4,
+    src: "/images/hero/restaurant.webp",
+    alt: "Delicious food restaurant",
+  },
+  {
     id: 2,
     src: "/images/hero/hero2.webp",
     alt: "Delicious food 2",

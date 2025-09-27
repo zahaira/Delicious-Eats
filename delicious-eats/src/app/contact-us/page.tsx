@@ -1,7 +1,12 @@
+import Contact from "@/shared/sections/contact/Contact";
 import React from "react";
 
-const Contact = () => {
-  return <div className="pt-[80px]">Contact</div>;
+const Page = () => {
+  return (
+    <div className="pt-[80px]">
+      <Contact />
+    </div>
+  );
 };
 
-export default Contact;
+export default Page;

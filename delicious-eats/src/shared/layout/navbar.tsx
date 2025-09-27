@@ -56,11 +56,7 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
                 className={`
                   relative transition-colors duration-300 
                   ${navBg ? "nav_link_dark" : "nav_link_light"} 
-                  ${
-                    isActive
-                      ? "text-[#f0ce5a] font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-yellow-300"
-                      : ""
-                  }
+                  ${isActive ? "text-[#f0ce5a] " : ""}
                 `}
               >
                 {link.label}

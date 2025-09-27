@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="pt-[80px]">
+    <div>
       <About />
     </div>
   );

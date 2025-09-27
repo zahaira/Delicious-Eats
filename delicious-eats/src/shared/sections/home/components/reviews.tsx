@@ -85,15 +85,15 @@ const Reviews = () => {
     <section className="py-20">
       <div className="max-w-4xl sm:max-w-5xl md:max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Slider Container */}
-        <div className="text-center mb-1">
+        <div className="text-center mb-1" data-aos="fade-up">
           <h2
-            className="font-bold text-center uppercase bg-gradient-to-r from-white via-amber-200 to-yellow-400 bg-clip-text text-transparent tracking-tight"
+            className="font-bold text-center bg-gradient-to-r from-white via-amber-200 to-yellow-400 bg-clip-text text-transparent tracking-tight"
             style={{ fontSize: "clamp(1.5rem, 5vw, 3.3rem)" }}
           >
             What Our Guests Say
           </h2>
         </div>
-        <div className="relative">
+        <div className="relative" data-aos="fade-up" data-aos-dalay="100">
           {/* Main Slider */}
           <div className="relative h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] overflow-hidden rounded-2xl md:rounded-3xl">
             <div

@@ -26,12 +26,10 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
 
   const pathname = usePathname();
 
-  const isHome = pathname === "/";
-
   return (
     <div
       className={`transition-all ${
-        navBg || menuOpen || !isHome ? "bg-primary/90 shadow-md" : "fixed"
+        navBg || menuOpen ? "bg-primary/90 shadow-md" : "fixed"
       } duration-200 h-[12vh] z-[10000] fixed w-full`}
     >
       <div className="flex justify-between items-center h-full w-[90%] mx-auto">
@@ -55,7 +53,7 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
                 key={link.id}
                 href={link.url}
                 className={`${
-                  navBg || !isHome ? "nav_link_dark" : "nav_link_light"
+                  navBg ? "nav_link_dark" : "nav_link_light"
                 } relative`}
               >
                 {link.label}
@@ -65,9 +63,7 @@ const Navbar = ({ toggleMenu, menuOpen }: props) => {
           <a
             href="/menu.pdf" // place your menu file inside /public/menu.pdf
             download="Delicious-Eats-Menu.pdf"
-            className={`${
-              navBg || !isHome ? "nav_link_dark" : "nav_link_light"
-            } relative`}
+            className={`${navBg ? "nav_link_dark" : "nav_link_light"} relative`}
           >
             Menu
           </a>

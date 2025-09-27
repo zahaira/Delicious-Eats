@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ResponsiveNavbar from "@/shared/layout/responsive-navbar";
 import Footer from "@/shared/layout/footer";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <body>
         <ResponsiveNavbar />
         <main>{children}</main>

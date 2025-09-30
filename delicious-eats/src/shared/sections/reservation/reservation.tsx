@@ -107,7 +107,7 @@ const ReservationPage = () => {
           {/* Submit */}
           <button
             type="submit"
-            className="bg-secondary text-white font-semibold px-6 py-3 rounded-full transition-colors duration-300 hover:bg-primary-dark cursor-pointer"
+            className="bg-secondary text-white font-semibold px-6 py-3 rounded-full transition-colors duration-300 hover:bg-primary cursor-pointer"
           >
             Reserve Now
           </button>

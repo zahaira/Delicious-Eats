@@ -12,7 +12,7 @@ const Footer = () => {
             alt="Delicious Eats"
             width={160}
             height={70}
-            className="cursor-pointer object-contain"
+            className="object-contain"
           />
         </div>
 

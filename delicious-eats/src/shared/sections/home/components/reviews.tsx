@@ -18,7 +18,7 @@ const reviews = [
     role: "Food Critic",
     comment:
       "Absolutely fantastic dishes! The flavors and presentation were top-notch. Every bite was a culinary masterpiece that transported me to gastronomic heaven.",
-    image: "/images/reviews/james.webp",
+    image: "/images/reviews/jame.webp",
     rating: 5,
   },
   {
